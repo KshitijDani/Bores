@@ -5,6 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 import org.junit.After;
@@ -15,7 +16,7 @@ public class CreateFriendshipTest
 {
     // instance variables - replace the example below with your own
    
-    private Facebook fb = mock(Facebook.class);
+    private Facebook fb = new Facebook();
     
     public CreateFriendshipTest()
     {
@@ -35,13 +36,15 @@ public class CreateFriendshipTest
         p1 = mock(Person.class);
         p2 = mock(Person.class);
         
+        fb.addPerson(p1);
+        fb.addPerson(p2);
+        
         when(p1.addFriend(p2)).thenReturn(true);
         when(p2.addFriend(p1)).thenReturn(true);
         
-        fb.addPerson(p1);
-        fb.addPerson(p2);   
+           
         
-        assertEquals(false,fb.connectFriends(p1,p2));
+        assertTrue(fb.connectFriends(p1,p2));
         
        
     }
