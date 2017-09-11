@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Profile
+comment1.params=name1
+comment1.target=Profile(java.lang.String)
+comment1.text=\n\ Construct\ an\ objects\ of\ class\ Profile.\n\ It\ creates\ a\ profile\ of\ a\ person\ with\ initializing\ a\ person\ name\ and\ an\ empty\ ArrayList\ for\ friends\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\n\ This\ method\ returns\ the\ name\ of\ a\ person.\n
+comment3.params=profileName
+comment3.target=boolean\ addFriend(Profile)
+comment3.text=\n\ This\ method\ add\ a\ friend\ to\ the\ friends\ list\ of\ a\ person\ and\ return\ true\ \n\ otherwise,\ if\ friend\ is\ already\ in\ list\ return\ false.\n
+comment4.params=profileName
+comment4.target=boolean\ removeFriend(Profile)
+comment4.text=\n\ This\ method\ removes\ a\ friend\ from\ the\ friends\ list\ of\ a\ person\ and\ return\ true\ \n\ otherwise,\ if\ friend\ does\ not\ exist\ in\ the\ list\ return\ false.\n
+comment5.params=name
+comment5.target=Profile\ searchFriend(java.lang.String)
+comment5.text=\n\ This\ method\ check\ whether\ a\ person\ is\ friend,\ If\ yes\ then\ return\ friends\ profile\ object,\ \n\ otherwise\ return\ null.\n
+numComments=6

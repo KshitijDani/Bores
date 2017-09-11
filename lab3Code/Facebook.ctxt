@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Facebook
+comment1.params=
+comment1.target=Facebook()
+comment2.params=person
+comment2.target=boolean\ addPerson(Person)
+comment3.params=one\ two
+comment3.target=boolean\ connectFriends(Person,\ Person)
+comment4.params=person
+comment4.target=java.util.Set\ listFriends(Person)
+numComments=5
