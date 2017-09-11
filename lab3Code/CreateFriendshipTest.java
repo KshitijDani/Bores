@@ -31,17 +31,17 @@ public class CreateFriendshipTest
     @Test
     public void CreateFriendship(){
         Person p1,p2;
+        
         p1 = mock(Person.class);
         p2 = mock(Person.class);
         
         when(p1.addFriend(p2)).thenReturn(true);
         when(p2.addFriend(p1)).thenReturn(true);
         
-        assertTrue(p1.addFriend(p2));
-        assertTrue(p2.addFriend(p1));
+        fb.addPerson(p1);
+        fb.addPerson(p2);   
         
-        //assertEquals(true,fb.connectFriends(p1,p2));
-        
+        assertEquals(false,fb.connectFriends(p1,p2));
         
        
     }
